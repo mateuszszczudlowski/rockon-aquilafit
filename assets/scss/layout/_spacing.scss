@@ -1,0 +1,41 @@
+.margin-top {
+    margin-top: 0;
+}
+
+.margin-top-42 {
+    margin-top: 42px;
+}
+
+.mar-bottom-30 {
+    margin-bottom: 3rem;
+}
+
+.mar-bottom-50 {
+    margin-bottom: 5rem;
+}
+
+.mar-bottom-100 {
+    margin-bottom: 10rem;
+    @media only screen and (max-width: 1200px) {
+        margin-bottom: 5rem;
+    }
+}
+
+.about-gym {
+    margin-top: 16.5rem;
+    .uk-width-1-1 {
+        -webkit-transition: .4s all;
+        transition: .4s all;
+    }
+}
+
+.margin-center {
+    margin: 0 auto;
+}
+
+.margin-right {
+    margin-right: 2rem;
+    @media only screen and (max-width: 575px) {
+        margin-right: 0;
+    }
+}

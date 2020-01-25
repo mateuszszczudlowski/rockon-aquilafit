@@ -1,0 +1,64 @@
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 10px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+section {
+    margin-top: 11.5rem;
+}
+
+img {
+    object-fit: cover;
+}
+
+::selection {
+    color: rgb(255, 255, 255);
+    background: rgb(230, 47, 50);
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(230, 47, 50);
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+
+.main-logo {
+    @media only screen and (max-width: 959px) {
+        width: 155px;
+        height: 90px;
+    }
+}
+
+.center-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.max-sized {
+    max-width: 56rem;
+    @media only screen and (max-width: 1200px) {
+        max-width: 80%;
+    }
+    @media only screen and (max-width: 639px) {
+        max-width: 100%;
+    }
+}

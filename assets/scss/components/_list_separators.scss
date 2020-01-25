@@ -1,0 +1,14 @@
+.footer__nav {
+    margin: 0 auto 30px auto!important;
+    padding: 0;
+    li {
+        margin-right: 6.5rem;
+        position: relative;
+        &:last-of-type {
+            margin-right: 0;
+            &:after {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.header-title-box {
+    position: relative;
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+        @media only screen and (max-width: 1440px) {
+            &__img {
+                min-height: 26rem;
+            -o-object-fit: cover;
+            object-fit: cover;
+            
+        }
+
+    }
+
+}
+
+.header-title {
+    text-align: center;
+    width: 100%;
+    max-width: 40rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+    border-radius: 50px 50px 0 0;
+
+    @media only screen and (max-width: 1440px) {
+
+        h2 {
+            font-size: 3.2rem;
+        }
+    
+    }
+
+    @media only screen and (max-width: 480px) {
+        max-width: 34rem;
+        bottom: -1px;
+    }
+
+    
+    @media only screen and (max-width: 360px) {
+        max-width: 30rem;
+        bottom: -1px;
+
+        h2 {
+            font-size: 2.6rem;
+        }
+    }
+
+    
+
+
+
+}

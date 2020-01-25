@@ -1,0 +1,131 @@
+.image-effect-box {
+    position: relative;
+    overflow: hidden;
+    &--img {
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        position: relative;
+        padding-right: 5rem;
+        padding-top: 5rem;
+    }
+    &:before {
+        content: '';
+        display: block;
+        border: 8px solid rgb(230, 47, 50);
+        width: calc(100% - 4rem);
+        height: calc(100% - 6rem);
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+.image-box--effect {
+    position: relative;
+    &:before {
+        content: url(/assets/images/Logo-03.png);
+        display: block;
+        position: absolute;
+        left: -170px;
+        top: -310px;
+        z-index: -1;
+        transition: top .4s;
+        @media only screen and (max-width: 639px) {
+            left: 0;
+            right: 0;
+            top: -310px;
+            z-index: -1;
+            transform: scale(0.5);
+        }
+        @media only screen and (max-width: 480px) {
+            display: none;
+        }
+    }
+}
+
+.image-box {
+    position: absolute;
+    bottom: 50px;
+    width: calc(100% - 40px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    &__title {
+        color: #ffffff;
+        font-size: 21px;
+        font-weight: 700;
+        text-transform: uppercase;
+        max-width: 240px;
+        line-height: 1.2;
+    }
+    &__link {
+        margin-top: 44px;
+    }
+}
+
+.box-shadow-effect {
+    -webkit-box-shadow: 7px 10px 2rem rgba(0, 0, 0, 0.65);
+    box-shadow: 7px 10px 2rem rgba(0, 0, 0, 0.65);
+}
+
+.hide-desktop-nav {
+    display: none;
+    @media only screen and (max-width: 1125px) {
+        padding: 0;
+    }
+}
+
+.margin-center {
+    margin: 0 auto;
+}
+
+.black-bg {
+    background: #000;
+}
+
+.black-red {
+    background: rgb(230, 47, 50);
+}
+
+footer .footer-properties {
+    max-width: none;
+    padding: 0;
+}
+
+.active-effect {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.active-effect.image-box--effect:before {
+    top: -300px;
+}
+
+.blur-effect {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+}
+
+@media only screen and (max-width: 1024px) {
+    .hide-desktop {
+        display: none;
+    }
+    .hide-desktop-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}

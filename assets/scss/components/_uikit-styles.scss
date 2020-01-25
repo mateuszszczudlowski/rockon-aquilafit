@@ -1,0 +1,11 @@
+.uk-container-large,
+.uk-container {
+    max-width: 1440px;
+}
+
+footer {
+    .uk-container .uk-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}

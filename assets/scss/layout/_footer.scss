@@ -1,0 +1,110 @@
+.footer {
+    @media only screen and (max-width: 639px) {
+        min-height: 16rem;
+    }
+    margin-top: 70px;
+    &__nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-weight: 500;
+        li {
+            font-size: 1.2rem;
+            letter-spacing: .1em;
+            -webkit-transition: color .3s;
+            transition: color .3s;
+            &:hover {
+                color: rgb(230, 47, 50);
+            }
+        }
+        &--link {
+            font-size: 1.6rem;
+            color: #fff;
+            -webkit-transition: color .3s;
+            transition: color .3s;
+            &:hover {
+                color: rgb(230, 47, 50);
+            }
+        }
+        @media only screen and (max-width: 959px) {
+            padding: 0;
+        }
+        @media only screen and (max-width: 639px) {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            li {
+                margin-right: 0;
+                margin-bottom: 1.5rem;
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+    &__grid {
+        justify-content: center;
+        width: 100%;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
+        img {
+            padding: 0;
+            margin: 10px 0;
+            width: 155px;
+            height: 90px;
+        }
+        @media only screen and (max-width: 959px) {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin: 0!important;
+        }
+    }
+    &__svg {
+        width: 11rem;
+        @media only screen and (max-width: 959px) {
+            padding: 0 15px;
+            margin-top: 20px;
+        }
+    }
+}
+
+.footer-red-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    height: 59px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &__link {
+        color: #fff;
+        margin: 0 4px;
+        transition: .3s color;
+        &:hover {
+            color: #000;
+        }
+    }
+    @media only screen and (max-width: 639px) {
+        justify-content: center;
+    }
+}
+
+footer .text-right {
+    justify-content: flex-end;
+    @media only screen and (max-width: 639px) {
+        justify-content: center;
+    }
+}
